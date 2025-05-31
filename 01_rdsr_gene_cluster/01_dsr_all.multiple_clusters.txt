@@ -1,0 +1,22 @@
+GB_GCA_002255365.1	30: dsrB, dsrF, dsrE, dsrH, dsrA | 29: dsrB, dsrA
+GB_GCA_004298065.1	111: dsrF, dsrH, dsrB, dsrE | 110: dsrB, dsrA
+GB_GCA_013151235.1	160: dsrB, dsrA | 161: dsrF, dsrB, dsrA, dsrE
+GB_GCA_013349825.1	171: dsrB, dsrF, dsrE, dsrH, dsrA | 172: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_016705575.1	247: dsrH, dsrB | 248: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_016716965.1	262: dsrF, dsrB, dsrE | 263: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_018812525.1	320: dsrB, dsrA | 319: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_019911805.1	345: dsrB, dsrF, dsrE, dsrH, dsrA | 346: dsrB, dsrA
+GB_GCA_021777915.1	395: dsrB, dsrF, dsrE, dsrH, dsrA | 396: dsrB, dsrA
+GB_GCA_021783175.1	399: dsrB, dsrF, dsrE, dsrH, dsrA | 400: dsrB, dsrA
+GB_GCA_021813805.1	416: dsrH, dsrB, dsrF, dsrE | 417: dsrB, dsrA
+GB_GCA_022340825.1	440: dsrB, dsrF, dsrE, dsrH, dsrA | 439: dsrB, dsrA
+GB_GCA_024102665.1	465: dsrB, dsrF, dsrE, dsrH, dsrA | 466: dsrB, dsrA
+GB_GCA_024227135.1	470: dsrB, dsrA | 469: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_024653915.1	494: dsrB, dsrA | 495: dsrB, dsrF, dsrE, dsrH, dsrA
+GB_GCA_913053655.1	544: dsrB, dsrF, dsrE, dsrH, dsrA | 545: dsrB, dsrA
+GB_GCA_945787105.1	548: dsrB, dsrF, dsrE, dsrH, dsrA | 549: dsrB, dsrA
+RS_GCF_000006985.1	555: dsrB, dsrA | 554: dsrF, dsrB, dsrA, dsrE
+RS_GCF_002355415.1	583: dsrB, dsrA | 584: dsrB, dsrF, dsrE, dsrH, dsrA
+RS_GCF_002355735.1	586: dsrB, dsrF, dsrE, dsrH, dsrA | 585: dsrB, dsrA
+RS_GCF_002356355.1	587: dsrB, dsrA | 588: dsrB, dsrF, dsrE, dsrH, dsrA
+RS_GCF_003932505.1	599: dsrB, dsrF, dsrE, dsrH, dsrA | 600: dsrB, dsrA
