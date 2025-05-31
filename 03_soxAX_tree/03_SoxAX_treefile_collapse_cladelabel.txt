@@ -1,0 +1,36 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names
+#additionally, you can specify a custom class for internal nodes, which can be used to automatically collapse them
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+SEPARATOR TAB
+#SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+# Aquificota
+cluster3822|cluster2377	Aquificota
+# Campylobacterota
+cluster1280|cluster281	Campylobacterota
+# Aquificota (Deinococcota, Pseudomonadota)
+cluster1061|cluster406	Aquificota (Deinococcota, Pseudomonadota, Myxococcota)
+# Nitrospirota (Desulfobacterota)
+cluster874|cluster76	Nitrospirota (Desulfobacterota)
+# Gammaproteobacteria
+cluster1962|cluster532	Gammaproteobacteria(Bacteroidota, Campylobacterota, Alphaproteobacteria)
+# Magnetococcia
+cluster2188|cluster64	Magnetococcia
+# Alphaproteobacteria
+cluster3758|cluster3467	Alphaproteobacteria(Eremiobacterota, Gammaproteobacteria)
+# Mixed
+cluster2878|cluster1420	Mixed
+cluster901	SZUA-79
