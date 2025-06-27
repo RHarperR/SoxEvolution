@@ -1,24 +1,26 @@
+# General description
 The custom scripts here aim to retrieve gene cluster involved in dissimilatory sulfur oxidation from the GTDB genome database (https://gtdb.ecogenomic.org/). The hidden markov models (HMMs) targeting each of the sulfur oxidizing genes are compiled in the `00_hmm_model` folder. A subset of sequences (~30 M unzipped; GTDB_r214_demo.faa.gz) from the full GTDB r214 database (~51 G) was used as a demo dataset.
 
 
 # System requirement
-Hardware requirements
+## Hardware requirements
 
 The `hmmsearch` script and python script in finding the gene cluster require a standard computer with >4G RAM and >5 CPUs to run the Demo dataset, and a server with >10G RAM and >20 CPUs to run the full GTDB r214 dataset. 
 
-Software requirements
-OS Requirements
+## Software requirements
 
+### OS Requirements
 This package is supported for macOS and Linux. The script has been tested on the following systems:
 
-    macOS: Mojave (10.14.6)
-    Linux: Ubuntu 18.04.3 LTS
+- macOS: Mojave (10.14.6)
+- Linux: Ubuntu 18.04.3 LTS
 
-Dependencies
+### Dependencies
 
-The `hmmsearch.sh` mainly depends on the hmmsearch command in the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on the pandas package of python.
-Installation Guide:
-install HMMER and BLAST+ using conda
+The `hmmsearch` command mainly depends on the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on the pandas package of python.
+
+## Installation Guide:
+### install HMMER and BLAST+ using conda
 
 The installation of hmmer/BLAST+ takes less than 5 minutes with a good connection to the conda mirror.
 
