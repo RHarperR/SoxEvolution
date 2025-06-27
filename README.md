@@ -17,31 +17,24 @@ This package is supported for macOS and Linux. The script has been tested on the
 
 ### Dependencies
 
-The `hmmsearch` command mainly depends on the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on the pandas package of python.
+The `hmmsearch` command mainly depends on the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on build-in modules including `os`, `re`, and `collections`.
 
 ## Installation Guide:
 ### install HMMER and BLAST+ using conda
 
 The installation of hmmer/BLAST+ takes less than 5 minutes with a good connection to the conda mirror.
 ```
-conda install hmmer
-conda install blast
-pip install pandas
+conda install hmmer=3.2 python=3.9
 ```
 
 
-
-## 1 Identifying functional oxidative sulfur metabolic gene clusters
-### 1.1 Homology Search with HMMER
+# Run Demo
+### Step 1: Search for individual genes involved in dissimilatory sulfur oxidation using HMMER
 To find Sox, rDsr, and sHdr homologs, we first search against the GTDB v214 using HMM profiles listed in 00_hmm_model with following command. Threshold are listed in Table S3.
-	
+```
 	hmmsearch --tblout <output_file> --noali <Threshold> <HMM_profile> <protein_database>
-
-The hmmsearch results were then processed into a table containing protein ID and name in 01_gene_cluster
-	·01_sox_all.txt
-	·0
-
-### 1.2 Gene Cluster Identification
+```
+### Step 2: identification of gene clusters based on homology search results
 The sox/rDsr/sHdr gene clusters are identified using the following command.
 	
 	python code_soxcluster_find.py
