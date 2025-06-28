@@ -1,0 +1,17 @@
+hmmsearch --tblout 01_hmmsearch_res/sHdrB2.res --noali --cut_nc 00_hmm_model/sHdrB2.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/dsrF.res --noali --cut_nc 00_hmm_model/dsrF.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxB.res --noali --cut_nc 00_hmm_model/soxB.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/sHdrC2.res --noali --cut_nc 00_hmm_model/sHdrC2.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxX.res --noali --cut_nc 00_hmm_model/soxX.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/sHdrC1.res --noali --cut_nc 00_hmm_model/sHdrC1.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/sHdrA.res --noali --cut_nc 00_hmm_model/sHdrA.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxD.res --noali --cut_nc 00_hmm_model/soxD.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxA.res --noali --cut_nc 00_hmm_model/soxA.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/dsrE.res --noali --cut_nc 00_hmm_model/dsrE.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/sHdrB1.res --noali --cut_nc 00_hmm_model/sHdrB1.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxY.res --noali --cut_nc 00_hmm_model/soxY.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/oxidative_dsrA.res --noali --cut_nc 00_hmm_model/oxidative_dsrA.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxC.res --noali --cut_nc 00_hmm_model/soxC.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/oxidative_dsrB.res --noali --cut_nc 00_hmm_model/oxidative_dsrB.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/dsrH.res --noali --cut_nc 00_hmm_model/dsrH.hmm.curated GTDB_r214_demo.faa
+hmmsearch --tblout 01_hmmsearch_res/soxZ.res --noali --cut_nc 00_hmm_model/soxZ.hmm.curated GTDB_r214_demo.faa
