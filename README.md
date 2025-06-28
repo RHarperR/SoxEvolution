@@ -17,10 +17,10 @@ This package is supported for macOS and Linux. The script has been tested on the
 
 ### Dependencies
 
-The `hmmsearch` command mainly depends on the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on build-in modules including `os`, `re`, and `collections`.
+The `hmmsearch` command mainly depends on the HMMER package (v3.2; http://hmmer.org/). The python scripts in searching of sulfur-oxidizing gene clusters mainly depend on build-in modules including `os`, `re`, `sys`, and `collections`.
 
 ## Installation Guide:
-### install HMMER and BLAST+ using conda
+### install HMMER and python3 using conda
 
 The installation of hmmer/BLAST+ takes less than 5 minutes with a good connection to the conda mirror.
 ```
