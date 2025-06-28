@@ -30,9 +30,13 @@ conda install hmmer=3.2 python=3.9
 
 # Run Demo
 ### Step 1: Search for individual genes involved in dissimilatory sulfur oxidation using HMMER
-To find Sox, rDsr, and sHdr homologs, we first search against the GTDB v214 using HMM profiles listed in 00_hmm_model with following command. Threshold are listed in Table S3.
+To find Sox, rDsr, and sHdr homologs, we first search against the GTDB v214 using HMM profiles listed in 00_hmm_model using the `code_hmmsearch.sh` command. The results of hmmsearch were further parsed using the `code_parsehmm.py`. The output of both scripts are in the directory `01_hmmsearch_res`
 ```
-hmmsearch --tblout <output_file> --noali <Threshold> <HMM_profile> <protein_database>
+rm -r 01_hmmsearch_res
+mkdir 01_hmmsearch_res
+# the hmmsearch step takes ~5 min
+source code_hmmsearch.sh &>/dev/null
+python code_parsehmm.py 01_hmmsearch_res/ 02_gene_cluster/
 ```
 ### Step 2: identification of gene clusters based on homology search results
 The sox/rDsr/sHdr gene clusters are identified using the following command.
