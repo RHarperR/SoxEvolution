@@ -1,5 +1,0 @@
-Total clusters: 3873
-Clusters with soxBAXYZ: 3788
-Clusters with soxBAXYZCD: 2470
-Genomes without sox clusters: 1202
-Number of acc with multiple clusters: 77
