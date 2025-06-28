@@ -1,0 +1,51 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names
+#additionally, you can specify a custom class for internal nodes, which can be used to automatically collapse them
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+SEPARATOR TAB
+#SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+# Paralogs
+2062_out1|1950_out1	Paralogs
+# Burkholderiales
+807|1064	Burkholderiales
+# Eremiobacterota
+2760|3596	Eremiobacterota
+#Reyranellales
+342|215	Reyranellales
+# XN24
+689|1228	XN24
+# Woeseiales
+3800|3562	Woeseiales
+# Pseudomonadales
+829|1950	Pseudomonadales
+# Nitrosococales
+2051|1509	Nitrosococales
+# Methylococcales
+756|3779	Methylococcales
+# Ga00756
+1335|1098	Ga00756
+# Pseudomonadales
+2922|1473	Pseudomonadales
+# Pseudomonadales
+2071|1516	Pseudomonadales
+# Rhizobiales
+1309|2687	Rhizobiales
+# Acetobacterales
+268|637	Acetobacterales
+# Campylobacterales
+109|2379	Campylobacterales
+# Rhizobiales
+338|2335	Rhizobiales

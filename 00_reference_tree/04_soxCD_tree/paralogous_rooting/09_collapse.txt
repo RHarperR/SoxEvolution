@@ -1,0 +1,43 @@
+COLLAPSE
+#use this template to automatically collapse clades. All IDs listed below DATA line will be collapsed.
+#lines starting with a hash are comments and ignored during parsing
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID
+#Examples
+# Paralogs
+2062_out1|1950_out1
+# Burkholderiales
+807|1064
+# Eremiobacterota
+2760|3596
+#Reyranellales
+342|215
+# XN24
+689|1228
+# Woeseiales
+3800|3562
+# Pseudomonadales
+829|1950
+# Nitrosococales
+2051|1509
+# Methylococcales
+756|3779
+# Ga00756
+1335|1098
+# Pseudomonadales
+2922|1473
+# Pseudomonadales
+2071|1516
+# Rhizobiales
+1309|2687
+# Acetobacterales
+268|637
+# Campylobacterales
+109|2379
+# Rhizobiales
+338|2335
