@@ -1,0 +1,4 @@
+Total clusters: 591
+Clusters with rdsrAB + dsrEFH: 591
+Genomes without clusters: 89
+Genomes with multiple clusters: 3
