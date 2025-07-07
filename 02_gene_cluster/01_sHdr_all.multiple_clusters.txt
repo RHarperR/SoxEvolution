@@ -1,0 +1,33 @@
+GB_GCA_021797365.1	39: sHdrA, sHdrC2, sHdrB2 | 38: sHdrA, sHdrB1, sHdrC2, sHdrC1
+GB_GCA_021817985.1	203: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 204: sHdrA, sHdrC2, sHdrB2
+GB_GCA_021813275.1	290: sHdrB1, sHdrC2, sHdrB2, sHdrA | 289: sHdrB1, sHdrC2, sHdrC1, sHdrA
+GB_GCA_002951815.1	346: sHdrB1, sHdrC1, sHdrA | 345: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+RS_GCF_900176145.1	347: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 348: sHdrB1, sHdrC1, sHdrA
+RS_GCF_001280565.1	350: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 349: sHdrA, sHdrB1, sHdrC1
+GB_GCA_003023725.1	354: sHdrA, sHdrB1, sHdrC1 | 353: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_902809825.1	359: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 360: sHdrB1, sHdrC1, sHdrA
+GB_GCA_021821465.1	365: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 366: sHdrA, sHdrB1, sHdrC1
+GB_GCA_021841025.1	370: sHdrA, sHdrB1, sHdrC1 | 369: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021797825.1	384: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 385: sHdrA, sHdrB1, sHdrC1
+GB_GCA_002878215.1	414: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 415: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021810565.1	427: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 426: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021820675.1	487: sHdrA, sHdrB1, sHdrC1 | 488: sHdrA, sHdrC2, sHdrB2
+GB_GCA_004195025.1	588: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 587: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021845685.1	592: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 593: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021809845.1	621: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 620: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_004195045.1	627: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 628: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021822625.1	629: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 630: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021819725.1	631: sHdrA, sHdrB1, sHdrC1 | 632: sHdrA, sHdrB1, sHdrC1
+GB_GCA_021825865.1	640: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 641: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_004195035.1	659: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 660: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021831025.1	664: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 663: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021800805.1	666: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 667: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021828255.1	680: sHdrA, sHdrB1, sHdrC2, sHdrB2 | 681: sHdrB1, sHdrC2, sHdrC1, sHdrA
+GB_GCA_021784835.1	686: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 685: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021811805.1	688: sHdrB1, sHdrC2, sHdrB2, sHdrA | 690: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 689: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021813595.1	692: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 691: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021789455.1	693: sHdrB1, sHdrC2, sHdrC1, sHdrA | 695: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 694: sHdrA, sHdrB1, sHdrC2
+GB_GCA_021777135.1	701: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 700: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021798015.1	702: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1 | 703: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021813525.1	713: sHdrA, sHdrB1, sHdrC2, sHdrB2, sHdrC1 | 714: sHdrB1, sHdrA, sHdrC2, sHdrB2, sHdrC1
+GB_GCA_021781285.1	762: sHdrA, sHdrB1, sHdrC2, sHdrC1 | 763: sHdrA, sHdrC2, sHdrB2

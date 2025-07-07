@@ -1,0 +1,4 @@
+Total clusters: 787
+Clusters with sHdrA + (sHdrB1 or sHdrB2) + (sHdrC1 or sHdrC2): 787
+Genomes without clusters: 2915
+Genomes with multiple clusters: 33
