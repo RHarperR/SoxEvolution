@@ -48,6 +48,7 @@ The sox/rDsr/sHdr gene clusters are identified using the following command. The 
 ```
 python code_rdsr_clusterfind.py 02_gene_cluster/00_rdsr_all.txt
 python code_soxcluster_find.py 02_gene_cluster/00_sox_all.txt
+python code_shdrcluster_find.py 02_gene_cluster/00_shdr_all.txt
 ```
 
 
