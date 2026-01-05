@@ -35,7 +35,7 @@ Each partition was assigned its own best-fit substitution model, following Marti
 
 ### consensus tree
 
-The consensus topology ** 04_species_consensus.topology ** was pruned and regraphed from the LG+R10 tree to ensure the monophyly of (1) the Archaea, (2) the DST group comprising phylum Deinococcota, Synergistota, and Thermotogota, (3) the Terrabacteria superphylum, and (4) the Gracilicutes superphylum. This topology represents the final working hypothesis of species relationships.
+The consensus topology **04_species_consensus.topology** was pruned and regraphed from the LG+R10 tree to ensure the monophyly of (1) the Archaea, (2) the DST group comprising phylum Deinococcota, Synergistota, and Thermotogota, (3) the Terrabacteria superphylum, and (4) the Gracilicutes superphylum. This topology represents the final working hypothesis of species relationships.
 
 The consensus topology was used as a fixed tree to re-estimate branch lengths and
 bootstrap support values under the LG+R10 model.
@@ -54,4 +54,5 @@ Rooted trees were concatenated into a single tree set and tested.
 	cat species_LG_R10.treefile.rooted species_consensus.treefile.rooted > 05_tree_test_all
 	iqtree -s 03_ribo_rnap.aln.trim -z 05_tree_test_all -m LG+R10 -n 0 -zb 1000 -au -T 15 --prefix 06_topotest
 	```
+
 
