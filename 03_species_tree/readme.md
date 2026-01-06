@@ -2,9 +2,10 @@
 ## Sequence Alignment & Trimming
 Ribosomal proteins and RNA polymerase subunits were identified and aligned using markerfinder pipeline (Martinez-Gutierrez and Aylward, 2021).
 
-	```
-	trimal -in 03_ribo_rnap.aln -out 03_ribo_rnap.aln.trim -gt 0.1
-	```
+```
+trimal -in 03_ribo_rnap.aln -out 03_ribo_rnap.aln.trim -gt 0.1
+```
+
 ## Phylogenetic Reconstruction
 
 
@@ -54,5 +55,6 @@ Rooted trees were concatenated into a single tree set and tested.
 	cat species_LG_R10.treefile.rooted species_consensus.treefile.rooted > 05_tree_test_all
 	iqtree -s 03_ribo_rnap.aln.trim -z 05_tree_test_all -m LG+R10 -n 0 -zb 1000 -au -T 15 --prefix 06_topotest
 	```
+
 
 
