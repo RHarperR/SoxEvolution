@@ -45,23 +45,23 @@ tracecomp -x <burnin> scenario<id>_ch1 scenario<id>_ch2
 ```
 # Scenario 1
 mkdir res_s01
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario01 -x 20 -catfix C20 -dgam 4 -ln res_s01/scenario01_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario01 -x 20 -catfix C20 -dgam 4 -ln res_s01/scenario01_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario01 -x 20 -catfix C20 -dgam 4 -ln res_s01/scenario01_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario01 -x 20 -catfix C20 -dgam 4 -ln res_s01/scenario01_ch2
 
 # Scenario 2
 mkdir res_s02
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario02 -x 20 -catfix C20 -dgam 4 -ln -r 3950 230 res_s02/scenario02_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario02 -x 20 -catfix C20 -dgam 4 -ln -r 3950 230 res_s02/scenario02_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario02 -x 20 -catfix C20 -dgam 4 -ln -r 3950 230 res_s02/scenario02_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario02 -x 20 -catfix C20 -dgam 4 -ln -r 3950 230 res_s02/scenario02_ch2
 
 # Scenario 3
 mkdir res_s03
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario03 -x 20 -catfix C20 -dgam 4 -ugam res_s03/scenario03_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario03 -x 20 -catfix C20 -dgam 4 -ugam res_s03/scenario03_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario03 -x 20 -catfix C20 -dgam 4 -ugam res_s03/scenario03_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario03 -x 20 -catfix C20 -dgam 4 -ugam res_s03/scenario03_ch2
 
 # Scenario 4
 mkdir res_s04
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario04 -x 20 -catfix C20 -dgam 4 -ugam -r 3950 230 res_s04/scenario04_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario04 -x 20 -catfix C20 -dgam 4 -ugam -r 3950 230 res_s04/scenario04_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario04 -x 20 -catfix C20 -dgam 4 -ugam -r 3950 230 res_s04/scenario04_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario04 -x 20 -catfix C20 -dgam 4 -ugam -r 3950 230 res_s04/scenario04_ch2
 ```
 
 Based on the performance of the primary runs (**_ _scenario 1–4_ _**), the Uncorrelated Gamma (-ugam) model was selected for the remaining sensitivity analyses (**_ _scenario 5–12_ _**), because this model outperformed the autocorrelated alternative by providing more efficient MCMC sampling, higher ESS values, and more congruent age estimates between independent runs.
@@ -70,53 +70,53 @@ Based on the performance of the primary runs (**_ _scenario 1–4_ _**), the Unc
 ```
 # Scenario 5
 mkdir res_s05
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario05 -x 20 -catfix C20 -dgam 4 -ugam res_s05/scenario05_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario05 -x 20 -catfix C20 -dgam 4 -ugam res_s05/scenario05_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario05 -x 20 -catfix C20 -dgam 4 -ugam res_s05/scenario05_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario05 -x 20 -catfix C20 -dgam 4 -ugam res_s05/scenario05_ch2
 
 # Scenario 6
 mkdir res_s06
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario06 -x 20 -catfix C20 -dgam 4 -ugam res_s06/scenario06_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario06 -x 20 -catfix C20 -dgam 4 -ugam res_s06/scenario06_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario06 -x 20 -catfix C20 -dgam 4 -ugam res_s06/scenario06_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario06 -x 20 -catfix C20 -dgam 4 -ugam res_s06/scenario06_ch2
 
 # Scenario 7
 mkdir res_s07
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario07 -x 20 -catfix C20 -dgam 4 -ugam res_s07/scenario07_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario07 -x 20 -catfix C20 -dgam 4 -ugam res_s07/scenario07_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario07 -x 20 -catfix C20 -dgam 4 -ugam res_s07/scenario07_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario07 -x 20 -catfix C20 -dgam 4 -ugam res_s07/scenario07_ch2
 
 # Scenario 8
 mkdir res_s08
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario08 -x 20 -catfix C20 -dgam 4 -ugam res_s08/scenario08_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario08 -x 20 -catfix C20 -dgam 4 -ugam res_s08/scenario08_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario08 -x 20 -catfix C20 -dgam 4 -ugam res_s08/scenario08_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario08 -x 20 -catfix C20 -dgam 4 -ugam res_s08/scenario08_ch2
 
 # Scenario 9
 mkdir res_s09
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario09 -x 20 -catfix C20 -dgam 4 -ugam res_s09/scenario09_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario09 -x 20 -catfix C20 -dgam 4 -ugam res_s09/scenario09_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario09 -x 20 -catfix C20 -dgam 4 -ugam res_s09/scenario09_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario09 -x 20 -catfix C20 -dgam 4 -ugam res_s09/scenario09_ch2
 
 # Scenario 10
 mkdir res_s10
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario10 -x 20 -catfix C20 -dgam 4 -ugam res_s10/scenario10_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario10 -x 20 -catfix C20 -dgam 4 -ugam res_s10/scenario10_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario10 -x 20 -catfix C20 -dgam 4 -ugam res_s10/scenario10_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario10 -x 20 -catfix C20 -dgam 4 -ugam res_s10/scenario10_ch2
 
 # Scenario 11
 mkdir res_s11
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario11 -x 20 -catfix C20 -dgam 4 -ugam res_s11/scenario11_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario11 -x 20 -catfix C20 -dgam 4 -ugam res_s11/scenario11_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario11 -x 20 -catfix C20 -dgam 4 -ugam res_s11/scenario11_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario11 -x 20 -catfix C20 -dgam 4 -ugam res_s11/scenario11_ch2
 
 # Scenario 12
 mkdir res_s12
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario12 -x 20 -catfix C20 -dgam 4 -ugam res_s12/scenario12_ch1
-pb -d input/alignment.phylip -t input/consensus.topology.acc -cal input/scenario12 -x 20 -catfix C20 -dgam 4 -ugam res_s12/scenario12_ch2
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario12 -x 20 -catfix C20 -dgam 4 -ugam res_s12/scenario12_ch1
+pb -d input/alignment.phylip -T input/consensus.topology.acc -cal input/scenario12 -x 20 -catfix C20 -dgam 4 -ugam res_s12/scenario12_ch2
 
 # Scenario 13
 mkdir res_s13
-pb -d input/alignment.phylip -t input/LG+C60+G.topology.acc -cal input/scenario13 -x 20 -catfix C20 -dgam 4 -ugam res_s13/scenario13_ch1
-pb -d input/alignment.phylip -t input/LG+C60+G.topology.acc -cal input/scenario13 -x 20 -catfix C20 -dgam 4 -ugam res_s13/scenario13_ch2
+pb -d input/alignment.phylip -T input/LG+C60+G.topology.acc -cal input/scenario13 -x 20 -catfix C20 -dgam 4 -ugam res_s13/scenario13_ch1
+pb -d input/alignment.phylip -T input/LG+C60+G.topology.acc -cal input/scenario13 -x 20 -catfix C20 -dgam 4 -ugam res_s13/scenario13_ch2
 
 # Scenario 14
 mkdir res_s14
-pb -d input/alignment.phylip -t input/partition.topology.acc -cal input/scenario14 -x 20 -catfix C20 -dgam 4 -ugam res_s14/scenario14_ch1
-pb -d input/alignment.phylip -t input/partition.topology.acc -cal input/scenario14 -x 20 -catfix C20 -dgam 4 -ugam res_s14/scenario14_ch2
+pb -d input/alignment.phylip -T input/partition.topology.acc -cal input/scenario14 -x 20 -catfix C20 -dgam 4 -ugam res_s14/scenario14_ch1
+pb -d input/alignment.phylip -T input/partition.topology.acc -cal input/scenario14 -x 20 -catfix C20 -dgam 4 -ugam res_s14/scenario14_ch2
 ```
 
 ### Extract results
