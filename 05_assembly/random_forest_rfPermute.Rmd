@@ -1,0 +1,177 @@
+---
+title: "Random Forest and rfPermute"
+author: ""
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    theme: united
+  word_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = TRUE)
+```
+
+```{r packages}
+library(dplyr)
+library(randomForest)
+library(caret)
+library(rfPermute)
+```
+
+
+```{r load-data}
+ecology   <- read.table('21_ecology_factor.txt',    header = TRUE, row.names = NULL)
+geography <- read.table('21_geography_factor.txt',   header = TRUE, row.names = NULL)
+phy_spe   <- read.table('21_phylo.spe_factor.txt',   header = TRUE, row.names = NULL)
+strategy  <- read.table('21_metabolism_rDsr.txt',    header = TRUE, row.names = NULL)
+```
+
+```{r merge}
+combine <- merge(ecology, geography, by = 'accession')
+combine <- merge(combine, phy_spe,  by = 'accession')
+combine <- merge(combine, strategy, by = 'accession')
+combine <- combine[, -1]
+combine[, c(1, 11)] <- lapply(combine[, c(1, 11)], as.factor)
+```
+
+```{r split}
+set.seed(1)
+trainIndex <- createDataPartition(combine$strategy, p = 0.7, list = FALSE)
+df_train <- combine[trainIndex, ]
+df_test  <- combine[-trainIndex, ]
+```
+
+```{r}
+set.seed(12346)
+tune_grid <- expand.grid(
+  .mtry = seq(2, ncol(df_train) - 1, by = 1) # 
+)
+
+# Set initial ntree value
+train_control <- trainControl(
+  method = "cv",
+  number = 10,
+  search = "grid"
+)
+
+# 
+rf_model <- train(
+  strategy ~ .,
+  data = df_train,
+  method = "rf",
+  trControl = train_control,
+  tuneGrid = tune_grid,
+  metric = "Accuracy",
+  ntree = 500, 
+  importance = TRUE,
+)
+
+rf_model$bestTune
+```
+
+```{r}
+best_mtry <- as.numeric(rf_model$bestTune)
+ntree_values <- seq(1000, 1500, by = 100)
+set.seed(12346)
+results <- data.frame(ntree = integer(), Accuracy = double())
+for (nt in ntree_values) {
+  model <- randomForest(
+    strategy ~ .,
+    data = df_train,
+    mtry = best_mtry,  # Use the best mtry from Step 1
+    ntree = nt,
+    importance = TRUE,
+  )
+  results <- rbind(results, data.frame(ntree = nt, Accuracy = mean(model$err.rate[, "OOB"])))
+}
+
+# Find best ntree
+best_ntree <- results[which.min(results$Accuracy), "ntree"]
+best_ntree
+```
+
+
+# Random forest
+
+```{r random-forest}
+set.seed(123)
+final_rf <- randomForest(
+  strategy ~ .,
+  data       = df_train,
+  mtry       = 3,
+  ntree      = 1400,
+  importance = TRUE
+)
+
+print(final_rf)
+```
+
+# Model evaluation
+
+```{r confusion-matrix}
+train_pred <- predict(final_rf, df_train)
+train_cm   <- caret::confusionMatrix(train_pred, df_train$strategy)
+
+test_pred  <- predict(final_rf, df_test)
+test_cm    <- caret::confusionMatrix(test_pred, df_test$strategy)
+```
+
+## Training and testing
+
+```{r train-cm}
+train_cm
+```
+
+## Testing
+
+```{r test-cm}
+test_cm
+```
+
+# rfPermute 
+
+```{r rfpermute}
+set.seed(123)
+factor_rfP <- rfPermute(
+  strategy ~ .,
+  data       = combine,
+  mtry       = 3,
+  ntree      = 1400,
+  importance = TRUE,
+  num.cores  = 10,
+  num.rep = 400
+)
+
+factor_rfP
+```
+
+## Variable importance and significance
+
+```{r importance and significance}
+importance_factor_scale <- data.frame(
+  importance(factor_rfP, scale = TRUE),
+  check.names = FALSE
+)
+
+p_values <- importance_factor_scale[, 12]
+adj_p_values <- p.adjust(p_values, method = "bonferroni")
+
+df.gini <- data.frame(
+  MeanDecreaseGini = importance_factor_scale[, 11],
+  Adj_P_Value = adj_p_values,
+  row.names = rownames(importance_factor_scale)
+)
+
+print(df.gini)
+```
+
+
+
+```{r session-info}
+sessionInfo()
+```
